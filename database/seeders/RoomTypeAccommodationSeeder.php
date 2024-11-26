@@ -11,17 +11,17 @@ class RoomTypeAccommodationSeeder extends Seeder
     {
         $data = [
             // Estándar: Sencilla, Doble
-            ['room_type_id' => 1, 'accommodation_id' => 1],
-            ['room_type_id' => 1, 'accommodation_id' => 2],
+            ['description' => 'Estándar - Sencilla' ,'room_type_id' => 1, 'accommodation_id' => 1],
+            ['description' => 'Estándar - Doble' ,'room_type_id' => 1, 'accommodation_id' => 2],
 
             // Junior: Triple, Cuádruple
-            ['room_type_id' => 2, 'accommodation_id' => 3],
-            ['room_type_id' => 2, 'accommodation_id' => 4],
+            ['description' => 'Junior - Triple' ,'room_type_id' => 2, 'accommodation_id' => 3],
+            ['description' => 'Junior - Cuádruple' ,'room_type_id' => 2, 'accommodation_id' => 4],
 
             // Suite: Sencilla, Doble, Triple
-            ['room_type_id' => 3, 'accommodation_id' => 1],
-            ['room_type_id' => 3, 'accommodation_id' => 2],
-            ['room_type_id' => 3, 'accommodation_id' => 3],
+            ['description' => 'Suite - Doble' ,'room_type_id' => 3, 'accommodation_id' => 2],
+            ['description' => 'Suite - Sencilla' ,'room_type_id' => 3, 'accommodation_id' => 1],
+            ['description' => 'Suite - Triple' ,'room_type_id' => 3, 'accommodation_id' => 3],
         ];
 
         foreach ($data as $relation) {
