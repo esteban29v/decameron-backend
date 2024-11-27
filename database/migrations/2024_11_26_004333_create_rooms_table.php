@@ -17,6 +17,7 @@ return new class extends Migration
             $table->integer('room_type_accommodation_id')->unsigned();
             $table->foreign('room_type_accommodation_id')->references('id')->on('room_type_accommodation');
             $table->integer('number_of_rooms');
+            $table->unique(['hotel_id', 'room_type_accommodation_id'], 'unique_hotel_accommodation');
             $table->timestamps();
         });
     }
